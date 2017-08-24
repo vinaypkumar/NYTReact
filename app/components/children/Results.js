@@ -5,6 +5,8 @@ var axios = require('axios');
 
 var Results = React.createClass({
 
+	//Need additional functions
+
 	render: function(){
 		return(
 			
