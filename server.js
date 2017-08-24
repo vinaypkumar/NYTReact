@@ -26,9 +26,6 @@ db.once("open", function() {
   console.log("Mongoose connection successful!");
 });
 
-app.get('/', function(req, res){
-  res.sendFile('./public/index.html');
-})
 
 app.get('/api/saved', function(req, res) {
 
@@ -72,6 +69,11 @@ app.delete('/api/saved/:id', function(req, res){
   });
 
 });
+
+app.get('/', function(req, res){
+  res.sendFile('./public/index.html');
+})
+
 
 app.listen(3000, function() {
   console.log("App listening on PORT: " + 3000);

@@ -9,7 +9,7 @@ render: function(){
 		return(
 			
 				<div className="panel-body">
-
+					{this.state.saved}
 				</div>			
 
 		);
